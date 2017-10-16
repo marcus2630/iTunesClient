@@ -14,6 +14,10 @@
 		2C12BF411F951F4E00E19EBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C12BF3F1F951F4E00E19EBE /* LaunchScreen.storyboard */; };
 		2C12BF4C1F951F4E00E19EBE /* iTunesClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12BF4B1F951F4E00E19EBE /* iTunesClientTests.swift */; };
 		2C12BF571F951F4E00E19EBE /* iTunesClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12BF561F951F4E00E19EBE /* iTunesClientUITests.swift */; };
+		2C12BF681F951FBA00E19EBE /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12BF671F951FBA00E19EBE /* Artist.swift */; };
+		2C12BF6A1F95207600E19EBE /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12BF691F95207600E19EBE /* Genre.swift */; };
+		2C12BF6C1F9520FF00E19EBE /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12BF6B1F9520FF00E19EBE /* Album.swift */; };
+		2C12BF6E1F95236900E19EBE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C12BF6D1F95236900E19EBE /* Song.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		2C12BF521F951F4E00E19EBE /* iTunesClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C12BF561F951F4E00E19EBE /* iTunesClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesClientUITests.swift; sourceTree = "<group>"; };
 		2C12BF581F951F4E00E19EBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C12BF671F951FBA00E19EBE /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		2C12BF691F95207600E19EBE /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		2C12BF6B1F9520FF00E19EBE /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		2C12BF6D1F95236900E19EBE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,9 @@
 		2C12BF351F951F4E00E19EBE /* iTunesClient */ = {
 			isa = PBXGroup;
 			children = (
+				2C12BF661F951FA000E19EBE /* Controllers */,
+				2C12BF651F951F9600E19EBE /* Views */,
+				2C12BF641F951F8C00E19EBE /* Models */,
 				2C12BF361F951F4E00E19EBE /* AppDelegate.swift */,
 				2C12BF381F951F4E00E19EBE /* ViewController.swift */,
 				2C12BF3A1F951F4E00E19EBE /* Main.storyboard */,
@@ -123,6 +134,31 @@
 				2C12BF581F951F4E00E19EBE /* Info.plist */,
 			);
 			path = iTunesClientUITests;
+			sourceTree = "<group>";
+		};
+		2C12BF641F951F8C00E19EBE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C12BF671F951FBA00E19EBE /* Artist.swift */,
+				2C12BF691F95207600E19EBE /* Genre.swift */,
+				2C12BF6B1F9520FF00E19EBE /* Album.swift */,
+				2C12BF6D1F95236900E19EBE /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C12BF651F951F9600E19EBE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2C12BF661F951FA000E19EBE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +295,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C12BF6E1F95236900E19EBE /* Song.swift in Sources */,
+				2C12BF681F951FBA00E19EBE /* Artist.swift in Sources */,
 				2C12BF391F951F4E00E19EBE /* ViewController.swift in Sources */,
 				2C12BF371F951F4E00E19EBE /* AppDelegate.swift in Sources */,
+				2C12BF6A1F95207600E19EBE /* Genre.swift in Sources */,
+				2C12BF6C1F9520FF00E19EBE /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
