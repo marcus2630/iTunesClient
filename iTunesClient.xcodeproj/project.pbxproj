@@ -24,6 +24,8 @@
 		2C66CD2D1F9699D2001DD5DF /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66CD2C1F9699D2001DD5DF /* AlbumListController.swift */; };
 		2C66CD2F1F969BAF001DD5DF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66CD2E1F969BAF001DD5DF /* AlbumCell.swift */; };
 		2C66CD311F969CFE001DD5DF /* AlbumListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66CD301F969CFE001DD5DF /* AlbumListDataSource.swift */; };
+		2CB82FED1F97B8D800205AF1 /* ItunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB82FEC1F97B8D800205AF1 /* ItunesMedia.swift */; };
+		2CB82FEF1F97B94E00205AF1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB82FEE1F97B94E00205AF1 /* Endpoint.swift */; };
 		2CEF78581F96A01100E393C5 /* AlbumCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF78571F96A01100E393C5 /* AlbumCellViewModel.swift */; };
 		2CEF785A1F96A76900E393C5 /* AlbumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF78591F96A76900E393C5 /* AlbumDetailController.swift */; };
 		2CEF785C1F96A8EA00E393C5 /* AlbumDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEF785B1F96A8EA00E393C5 /* AlbumDetailViewModel.swift */; };
@@ -73,6 +75,8 @@
 		2C66CD2C1F9699D2001DD5DF /* AlbumListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		2C66CD2E1F969BAF001DD5DF /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		2C66CD301F969CFE001DD5DF /* AlbumListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListDataSource.swift; sourceTree = "<group>"; };
+		2CB82FEC1F97B8D800205AF1 /* ItunesMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMedia.swift; sourceTree = "<group>"; };
+		2CB82FEE1F97B94E00205AF1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2CEF78571F96A01100E393C5 /* AlbumCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCellViewModel.swift; sourceTree = "<group>"; };
 		2CEF78591F96A76900E393C5 /* AlbumDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailController.swift; sourceTree = "<group>"; };
 		2CEF785B1F96A8EA00E393C5 /* AlbumDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewModel.swift; sourceTree = "<group>"; };
@@ -164,6 +168,7 @@
 		2C12BF641F951F8C00E19EBE /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2CB82FEB1F97B89E00205AF1 /* Endpoint */,
 				2C12BF671F951FBA00E19EBE /* Artist.swift */,
 				2C12BF691F95207600E19EBE /* Genre.swift */,
 				2C12BF6B1F9520FF00E19EBE /* Album.swift */,
@@ -201,6 +206,15 @@
 				2CEF785D1F96AAC700E393C5 /* AlbumDetailDataSource.swift */,
 			);
 			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		2CB82FEB1F97B89E00205AF1 /* Endpoint */ = {
+			isa = PBXGroup;
+			children = (
+				2CB82FEC1F97B8D800205AF1 /* ItunesMedia.swift */,
+				2CB82FEE1F97B94E00205AF1 /* Endpoint.swift */,
+			);
+			path = Endpoint;
 			sourceTree = "<group>";
 		};
 		2CEF78561F96A00000E393C5 /* View Models */ = {
@@ -361,8 +375,10 @@
 				2CEF78601F96AB3F00E393C5 /* SongCell.swift in Sources */,
 				2C12BF6A1F95207600E19EBE /* Genre.swift in Sources */,
 				2C12BF6C1F9520FF00E19EBE /* Album.swift in Sources */,
+				2CB82FEF1F97B94E00205AF1 /* Endpoint.swift in Sources */,
 				2C12BF751F95401D00E19EBE /* SearchResultsDataSource.swift in Sources */,
 				2C66CD2F1F969BAF001DD5DF /* AlbumCell.swift in Sources */,
+				2CB82FED1F97B8D800205AF1 /* ItunesMedia.swift in Sources */,
 				2C12BF701F95269400E19EBE /* Stub.swift in Sources */,
 				2CEF785C1F96A8EA00E393C5 /* AlbumDetailViewModel.swift in Sources */,
 			);
