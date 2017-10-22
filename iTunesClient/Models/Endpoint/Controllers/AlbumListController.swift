@@ -10,22 +10,27 @@ import UIKit
 
 class AlbumListController: UITableViewController {
     
-    private struct Constans {
+    let client = ItunesAPIClient()
+    
+    private struct Constants {
         
         // static is when the property belongs to the object rather than the instance
         static let AlbumCellHeight: CGFloat = 80
     }
     
-    var artist: Artist!
+    var artist: Artist? {
+        didSet {
+            self.title = artist?.name
+            dataSource.update(with: artist!.albums)
+            tableView.reloadData()
+        }
+    }
     
-    lazy var dataSource: AlbumListDataSource = {
-        return AlbumListDataSource(albums: self.artist.albums)
-    }()
+    var dataSource = AlbumListDataSource(albums: [])
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = artist.name
+    
         
         tableView.dataSource = dataSource
 
@@ -39,7 +44,7 @@ class AlbumListController: UITableViewController {
     // MARK: - Table View delegate
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return Constans.AlbumCellHeight
+        return Constants.AlbumCellHeight
     }
     
     // MARK: - Navigation
@@ -48,10 +53,14 @@ class AlbumListController: UITableViewController {
         if segue.identifier == "showAlbum" {
             if let selectedIndexPath = tableView.indexPathForSelectedRow {
                 let selectedAlbum = dataSource.album(at: selectedIndexPath)
-                selectedAlbum.songs = Stub.songs
                 
-                let albumDetailController = segue.destination as! AlbumDetailController
-                albumDetailController.album = selectedAlbum
+                
+                client.lookupAlbum(withID: selectedAlbum.id) { album, error in
+                    let albumDetailController = segue.destination as! AlbumDetailController
+                    albumDetailController.album = album
+                    albumDetailController.tableView.reloadData()
+                }
+                
             }
         }
     }
