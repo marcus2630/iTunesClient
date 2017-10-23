@@ -44,10 +44,10 @@ class AlbumDetailController: UITableViewController {
         let viewModel = AlbumDetailViewModel(album: album)
         
         // Add implementation for artworkView
-        
         albumTitleLabel.text = viewModel.title
         albumGenreLabel.text = viewModel.genre
         albumReleaseDateLabel.text = viewModel.releaseDate
+        artworkView.image = viewModel.artwork
 
     }
 

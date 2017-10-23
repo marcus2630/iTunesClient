@@ -24,6 +24,8 @@
 		2C66CD2D1F9699D2001DD5DF /* AlbumListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66CD2C1F9699D2001DD5DF /* AlbumListController.swift */; };
 		2C66CD2F1F969BAF001DD5DF /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66CD2E1F969BAF001DD5DF /* AlbumCell.swift */; };
 		2C66CD311F969CFE001DD5DF /* AlbumListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C66CD301F969CFE001DD5DF /* AlbumListDataSource.swift */; };
+		2C865C3B1F9D18B6001621D1 /* ArtworkDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C865C3A1F9D18B6001621D1 /* ArtworkDownloader.swift */; };
+		2C865C3D1F9D1B47001621D1 /* PendingOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C865C3C1F9D1B47001621D1 /* PendingOperations.swift */; };
 		2CB82FED1F97B8D800205AF1 /* ItunesMedia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB82FEC1F97B8D800205AF1 /* ItunesMedia.swift */; };
 		2CB82FEF1F97B94E00205AF1 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB82FEE1F97B94E00205AF1 /* Endpoint.swift */; };
 		2CB82FF11F99165600205AF1 /* ItunesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB82FF01F99165600205AF1 /* ItunesEntity.swift */; };
@@ -81,6 +83,8 @@
 		2C66CD2C1F9699D2001DD5DF /* AlbumListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListController.swift; sourceTree = "<group>"; };
 		2C66CD2E1F969BAF001DD5DF /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		2C66CD301F969CFE001DD5DF /* AlbumListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListDataSource.swift; sourceTree = "<group>"; };
+		2C865C3A1F9D18B6001621D1 /* ArtworkDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkDownloader.swift; sourceTree = "<group>"; };
+		2C865C3C1F9D1B47001621D1 /* PendingOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PendingOperations.swift; sourceTree = "<group>"; };
 		2CB82FEC1F97B8D800205AF1 /* ItunesMedia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesMedia.swift; sourceTree = "<group>"; };
 		2CB82FEE1F97B94E00205AF1 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		2CB82FF01F99165600205AF1 /* ItunesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesEntity.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 				2CB82FF71F992FA500205AF1 /* JSONDownloader.swift */,
 				2CB82FF91F99304C00205AF1 /* ItunesError.swift */,
 				2CB82FFB1F9B656D00205AF1 /* ItunesAPIClient.swift */,
+				2C865C3A1F9D18B6001621D1 /* ArtworkDownloader.swift */,
+				2C865C3C1F9D1B47001621D1 /* PendingOperations.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -389,6 +395,8 @@
 			files = (
 				2CB82FFA1F99304C00205AF1 /* ItunesError.swift in Sources */,
 				2CB82FF81F992FA500205AF1 /* JSONDownloader.swift in Sources */,
+				2C865C3B1F9D18B6001621D1 /* ArtworkDownloader.swift in Sources */,
+				2C865C3D1F9D1B47001621D1 /* PendingOperations.swift in Sources */,
 				2C12BF6E1F95236900E19EBE /* Song.swift in Sources */,
 				2C12BF681F951FBA00E19EBE /* Artist.swift in Sources */,
 				2C12BF391F951F4E00E19EBE /* ViewController.swift in Sources */,
